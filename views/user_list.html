@@ -1,0 +1,66 @@
+<~header.html~>
+<div class="breadcrumbs">
+	<div class="col-sm-4">
+		<div class="page-header float-left">
+			<div class="page-title">
+				<h1>Dashboard</h1>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-8">
+		<div class="page-header float-right">
+			<div class="page-title">
+				<ol class="breadcrumb text-right">
+					<li><a href="#">Dashboard</a></li>
+					<li><a href="#">Table</a></li>
+					<li class="active">Basic table</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="content mt-3">
+	<div class="animated fadeIn">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="card">
+					<div class="card-header" style="position:relative;">
+						<strong class="card-title">Basic Table</strong>
+						<div style="position:absolute;display:table;top:15%;right:1%;width:15%;height:70%;border-radius:5px;background:#00f;">
+							<a style="display:table-cell;vertical-align:middle;text-align:center;color:#fff;"href="/user_create">New user</a>
+						</div>
+					</div>
+					<div class="card-body">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Type</th>
+									<th scope="col">Username</th>
+									<th scope="col">Email</th>
+									<th scope="col">Reg. time</th>
+									<th scope="col">#</th>
+									<th scope="col">#</th>
+								</tr>
+							</thead>
+							<tbody>
+							{tb}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- .animated -->
+</div><!-- .content -->
+
+<script>
+	function confirmDelete(uid) {
+		var r = confirm("Are you sure you want to delete?")
+		if (r) {
+			window.location.href = '/user_delete_' + uid
+		}
+	}
+</script>
+<~footer.html~>

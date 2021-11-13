@@ -1,0 +1,22 @@
+{
+  "name": "nguyenthanhcong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "length": "^0.0.1",
+    "md5": "^2.3.0",
+    "mongodb": "^3.6.3",
+    "multer": "^1.4.2",
+    "nodejs": "^0.0.0",
+    "sharp": "^0.26.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
